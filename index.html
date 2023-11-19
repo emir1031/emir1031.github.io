@@ -540,7 +540,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
             
-		<form action="https://formspree.io/f/xvojnvvz" method="POST" onsubmit="submitForm(event, this);">
+		<form action="https://formspree.io/f/xvojnvvz" method="POST">
 	  		<div class="form-group">
 	    			<label for="firstName">First Name:</label>
 	    			<input type="text" class="form-control" id="firstName" name="firstName" required>
@@ -559,18 +559,12 @@
 	  		</div>
 	  		<div class="form-group">
 	    			<label for="message">Message:</label>
-	    			<textarea class="form-control" id="message" name="message" rows="13" required></textarea>
+	    			<textarea class="form-control" id="message" name="message" rows="9" required></textarea>
 	  		</div>
-	  			<input type="hidden" name="_subject" value="Portfolio Website Email">
-	  			<button type="submit" class="btn btn-primary">Submit</button>
+	  		<div class="form-group">
+	  			<button type="submit">Submit</button>
+			</div>
 		</form>
-	
-		<script>
-	  		function submitForm(event, form) {
-	    			event.preventDefault();
-	    			alert("Message sent successfully!");
-	  		}
-		</script>
 
           </div>
 
