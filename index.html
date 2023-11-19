@@ -256,7 +256,6 @@
               </div>
             </div>
 		    
-            </div>
             <div class="progress">
               <span class="skill">Excel, Google sheets, Microsoft Spreadsheet<i class="val">80%</i></span>
               <div class="progress-bar-wrap">
@@ -340,7 +339,7 @@
             </div>
             <div class="resume-item">
               <h4>Business Analytics Team Member</h4>
-              <h5>08/2017 – 10/2019 | BOBST, Turkey</h5>
+              <h5>08/2017 – 10/2019 | BOBST</h5>
               <ul>
                 <li>Responsible for gathering the all machines performance data such as maintenance and failure frequency, user experience data, performance time, production metrics etc. using analytical tools and creating reports / dashboards and recommendations to decision makers IOT increase product efficiency and performance.</li>
               </ul>
@@ -539,35 +538,32 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
             
-		<form action="https://formspree.io/f/xvojnvvz" method="POST" onsubmit="submitForm(event, this);">
-	  		<div class="form-group">
-	    			<label for="name">Name:</label>
-	    			<input type="text" class="form-control" id="name" name="name" required>
-	  		</div>
-	  		<div class="form-group">
-	    			<label for="email">Email:</label>
-	    			<input type="email" class="form-control" id="email" name="email" required>
-	  		</div>
-	 		<div class="form-group">
-	    			<label for="subject">Subject:</label>
-	    			<input type="text" class="form-control" id="subject" name="subject" required>
-	  		</div>
-	  		<div class="form-group">
-	    			<label for="message">Message:</label>
-	    			<textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-	  		</div>
-	  			<input type="hidden" name="_subject" value="New message from your website contact form">
-	  			<button type="submit" class="btn btn-primary">Submit</button>
-		</form>
-	
-		<script>
-	  		function submitForm(event, form) {
-	    			event.preventDefault();
-	    			alert("Message sent successfully!");
-	  		}
-		</script>
-
-            
+		<form
+		  action="https://formspree.io/f/xvojnvvz"
+		  method="POST">
+		  <label>
+		    Your First Name:
+		    <input type="firstName" name="firstName">
+		  </label>
+		  <label>
+		    Your Last Name:
+		    <input type="lastName" name="lastName">
+		  </label>
+		  <label>
+		    Your email:
+		    <input type="email" name="email">
+		  </label>
+		  <label>
+		    Subject:
+		    <input type="subject" name="subject">
+		  </label>
+		  <label>
+		    Your message:
+		    <textarea name="message"></textarea>
+		  </label>
+		  <!-- your other form fields go here -->
+		  <button type="submit">Send</button>
+		</form>            
 
           </div>
 
